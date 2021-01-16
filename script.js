@@ -21,7 +21,7 @@ const randomWord = () => {
     }); 
 }
 
-const randomDefinition = () => {
+const randomDefinition = (word) => {
     fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=${info.key}`)
     .then(response => {
         return response.json(); 
