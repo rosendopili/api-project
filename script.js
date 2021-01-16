@@ -1,10 +1,12 @@
 import {info} from './env.js'; 
 const body = document.querySelector('body'); 
 const button = document.querySelector('button'); 
+const wordContainer = document.querySelector('.word-container'); 
 const word = document.createElement('h1'); 
-body.appendChild(word); 
 const definition = document.createElement('p'); 
-body.appendChild(definition); 
+body.appendChild(wordContainer); 
+wordContainer.appendChild(word); 
+wordContainer.appendChild(definition); 
 
 const randomWord = () => {
     fetch('https://random-word-api.herokuapp.com/word?number=1')
