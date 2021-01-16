@@ -20,7 +20,7 @@ const randomWord = () => {
     })
     .catch(err => {
         console.log(err); 
-        return "No Word Available"
+        word.textContent = "No Word Available"
     }); 
 }
 
@@ -31,11 +31,13 @@ const randomDefinition = (word) => {
     })
     .then(response => {
         console.log(response[0].shortdef[0]); 
+        definition.classList.remove('error'); 
         definition.textContent = "Definition: " + response[0].shortdef[0]; 
     })
     .catch(err => {
        console.log(err); 
-       return "No Definition Available"; 
+       definition.classList.add('error'); 
+       definition.textContent = "No Definition Available"; 
     });
 
 }

@@ -48,3 +48,8 @@ h1, p {
 .display-none{
     display: none; 
 }
+.error{
+    color: red; 
+    font-weight: bolder; 
+    text-decoration: line-through; 
+}
