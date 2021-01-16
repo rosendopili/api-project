@@ -6,8 +6,6 @@ body.appendChild(word);
 const definition = document.createElement('p'); 
 body.appendChild(definition); 
 
-console.log(process.env); 
-
 const randomWord = () => {
     fetch('https://random-word-api.herokuapp.com/word?number=1')
     .then(response => {
