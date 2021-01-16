@@ -13,11 +13,11 @@ const randomWord = () => {
     })
     .then(response => {
         word.textContent = response
-        console.log(response);
         randomDefinition(word);
     })
     .catch(err => {
         console.log(err); 
+        return "No Word Available"
     }); 
 }
 
@@ -32,6 +32,7 @@ const randomDefinition = (word) => {
     })
     .catch(err => {
        console.log(err); 
+       return "No Definition Available"; 
     });
 
 }
