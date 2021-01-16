@@ -15,7 +15,7 @@ body {
     color: white;  
     background: linear-gradient(45deg, rgba(238,188,196,1) 0%, rgba(255,0,106,1) 100%); 
     box-shadow: 1px 4px black; 
-    text-shadow: 2px 2px black; 
+    text-shadow: 2px 1px black; 
 }
 .word-container{
     width: 70vw; 
@@ -40,9 +40,11 @@ h1, p {
     padding-bottom: 100px; 
     text-shadow: 1px 4px pink; 
 }
-
 .CTA{
     padding-bottom: 10px; 
     font-weight: bolder;
     color: black; 
+}
+.display-none{
+    display: none; 
 }

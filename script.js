@@ -16,6 +16,7 @@ const randomWord = () => {
     .then(response => {
         word.textContent = response
         randomDefinition(word);
+        wordContainer.classList.remove('display-none'); 
     })
     .catch(err => {
         console.log(err); 
