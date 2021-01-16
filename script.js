@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 import {info} from './env.js'; 
 const body = document.querySelector('body'); 
 const button = document.querySelector('button'); 
@@ -5,6 +6,8 @@ const word = document.createElement('h1');
 body.appendChild(word); 
 const definition = document.createElement('p'); 
 body.appendChild(definition); 
+
+console.log(process.env); 
 
 const randomWord = () => {
     fetch('https://random-word-api.herokuapp.com/word?number=1')
